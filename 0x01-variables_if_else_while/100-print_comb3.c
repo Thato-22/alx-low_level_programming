@@ -5,17 +5,18 @@
  */
 int main(void)
 {
-	int n, m;
+	int ones = '0';
+	int tens = '0';
 
-	for (n = 48; n <= 56; n++)
+	for (tens = '0'; tens <= '9'; tens++)
 	{
-		for (m = 49; n <= 57; m++)
+		for (ones = '0'; ones <= '0'; ones++)
 		{
-			if (m > n)
+			if (!((ones == tens) || (tens > ones)))
 			{
-				putchar(n);
-				putchar(m);
-				if (n != 56 || m != 57)
+				putchar(tens);
+				putchar(ones);
+				if (!(ones == '9' && tens == '8'))
 				{
 					putchar(',');
 					putchar(' ');
