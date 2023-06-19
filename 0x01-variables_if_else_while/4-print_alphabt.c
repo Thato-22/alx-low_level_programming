@@ -9,7 +9,7 @@ int main(void)
 {
 	char ch = 'a';
 
-	while (ch <= '2')
+	while (ch <= 'z')
 	{
 		if ((ch != 'e') && (ch != 'q'))
 		{
